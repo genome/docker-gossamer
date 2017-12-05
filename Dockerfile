@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y \
   libbz2-dev \
   libsqlite3-dev \
   unzip
+  
+RUN apt-get install -y --no-install-recommends libnss-sss
 
 
 ENV GOSSAMER_INSTALL_DIR=/tmp/gossamer-master/build/
